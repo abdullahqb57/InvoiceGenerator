@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="invoice.css">
+    <link  href="invoice.js">
+    <title>The Invoice Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  </head>
+  <body >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGh_PDkZ9Mn_uo4rJCNUGmYe1rDJ1w56ROI9KaB0f_wnr0DF-o" height="85px" width="100px" class="img-fluid" alt="Responsive image">
+            <button type="button" class="btn btn-outline-danger">The Hacking School Invoice</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-light">Invoicing Guide</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-danger">Upgrade</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <div class="container">
+                <div class="row">
+                  <div class="col1">
+                        <header>
+                                <h1>Invoice</h1>
+                                <img alt="" src="https://www.thehackingschool.com/images/ths-trans.png" height="100px" width="120px">
+                                <address contenteditable>
+                                    <h2>Enter Address</h2>
+                                    <p>....</p>
+                                    <p>....</p>
+                                </address>
+                                <span><input type="file" accept="image/*"></span>
+                            </header>
+                            <article>
+                                <!-- <h1>Recipient</h1>
+                                <address contenteditable>
+                                    <p>Enter Address<br>...</p>
+                                </address> -->
+                                <table class="meta">
+                                    <tr>
+                                        <th><span contenteditable>Invoice #</span></th>
+                                        <td><span contenteditable>...</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span contenteditable>Date</span></th>
+                                        <td><span contenteditable>...</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span contenteditable>Amount Due</span></th>
+                                        <td><span id="prefix" contenteditable>$</span><span>Rs...</span></td>
+                                    </tr>
+                                </table>
+                                <table class="inventory">
+                                    <thead>
+                                        <tr>
+                                            <th><span contenteditable>Item</span></th>
+                                            <th><span contenteditable>Description</span></th>
+                                            <th><span contenteditable>Rate</span></th>
+                                            <th><span contenteditable>Quantity</span></th>
+                                            <th><span contenteditable>Price</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a class="cut">-</a><span contenteditable>Front End Consultation</span></td>
+                                            <td><span contenteditable>Experience Review</span></td>
+                                            <td><span data-prefix>$</span><span contenteditable>150.00</span></td>
+                                            <td><span contenteditable>4</span></td>
+                                            <td><span data-prefix>$</span><span>600.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a class="add">+</a>
+                                <table class="balance">
+                                    <tr>
+                                        <th><span contenteditable>Total</span></th>
+                                        <td><span data-prefix>$</span><span>...</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span contenteditable>Amount Paid</span></th>
+                                        <td><span data-prefix>$</span><span contenteditable>...</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span contenteditable>Balance Due</span></th>
+                                        <td><span data-prefix>$</span><span>...</span></td>
+                                    </tr>
+                                </table>
+                            </article>
+                            <aside>
+                                <h1><span contenteditable>Additional Notes</span></h1>
+                                <div contenteditable>
+                                    <p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+                                </div>
+                            </aside>             
+                  </div>
+                  <div class="col2" align="center">
+                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Upload Invoice</a><br><br><br>
+                  <button type="button" class="btn btn-secondary btn-lg">Download Invoice</button><br><br><br>
+                  <button type="button" class="btn btn-light">My Invoice(6)</button><br><br><br>
+                  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">The Hacking School</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Invoice</h5><hr>
+                      <p class="card-text">Thankyou for having relationship with THE HACKING SCHOOL...Hope this continues...Sorry for any inconvinuence...</p>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+              <nav class="navbar fixed-bottom navbar-light bg-light">
+                <div class="btn-group btn-group-toggle footer" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Invoice
+                    </label>
+
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Template
+                      </label>
+
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Upgrade
+                      </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Help
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> API Guide
+                    </label>
+
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> @invoicedapp
+                      </label>
+                  </div>
+                </nav>            
+</body>
+</html>
